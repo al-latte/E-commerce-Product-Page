@@ -1,5 +1,5 @@
 import "./profile.css";
-
+import { profileImg } from "../../images";
 interface Props {
 	itemsInCart: number;
 	toggleCart: () => void;
@@ -24,7 +24,7 @@ const Profile = ({ itemsInCart, toggleCart }: Props) => {
 				</svg>
 			</div>
 
-			<img id="profile-picture" src="../src/assets/images/image-avatar.png" />
+			<img id="profile-picture" src={profileImg} />
 		</div>
 	);
 };
