@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./App.css";
+import "./images.tsx";
 import Navigation from "./components/nagivation/Navigation";
 import Cart from "./components/cart/Cart";
 import ProductDisplay from "./components/productDisplay/ProductDisplay";
