@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+
+/* #root, #__next {
+  isolation: isolate;
+} */
+
+:root {
+	/* Colors Primary */
+	--brand-orange: hsl(26 100% 55%);
+	--percent-bg: hsl(25 100% 94%);
+
+	/* Colors Neutral */
+	--bold-dark-text: hsl(218, 12%, 13%);
+	--light-text-onHover: hsl(220 13% 13%);
+	--text-color-neutral: hsl(219 9% 45%);
+	--grayish-blue: hsl(220 14% 75%);
+	--light-grayish-blue: hsl(223 64% 98%);
+	--white: hsl(0 0% 100%);
+	--lightbox-bg: hsl(0 0% 0% /0.75);
+
+	/* Fonts*/
+	--font-family: "Kumbh Sans", sans-serif;
+	--body-fs: 16px;
+	--fw-400-neutral: 400;
+	--fw-700-bold: 700;
+
+	/* Breakpoints */
+	--tablet: 768px;
+	--desktop: 1024px;
+
+	/* Paddings Margins etc. */
+	--border-radius: 15px;
+}
+
+body {
+	font-size: var(--body-fs);
+	font-weight: var(--fw-400-neutral);
+	color: var(--text-color-neutral);
+	font-family: var(--font-family);
+}

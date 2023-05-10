@@ -1,0 +1,41 @@
+.profile {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: clamp(1rem, 5vw, 2.5rem);
+}
+
+.profile img {
+	width: clamp(30px, 5vw, 50px);
+}
+
+.profile img:hover {
+	cursor: pointer;
+	border-radius: 50%;
+	outline: 2px solid var(--brand-orange);
+}
+
+#shopping-cart path:hover {
+	cursor: pointer;
+	fill: black;
+}
+.bubble {
+	position: relative;
+}
+
+.bubble::after {
+	content: attr(data-items);
+	position: absolute;
+	width: 22px;
+	height: 15px;
+	border-radius: 8px;
+	display: block;
+	text-align: center;
+	color: var(--white);
+	font-size: 10px;
+	font-weight: var(--fw-700-bold);
+	background-color: var(--brand-orange);
+	top: -10px;
+	left: 10px;
+	right: 0;
+}

@@ -1,0 +1,99 @@
+.lightbox {
+	display: none;
+}
+
+@media screen and (min-width: 1024px) {
+	.lightbox {
+		display: block;
+		position: absolute;
+		z-index: 2000;
+		top: 0;
+		left: -0;
+		background-color: rgba(0, 0, 0, 0.795);
+		width: 100%;
+		height: auto;
+	}
+
+	.lightbox-display {
+		position: relative;
+		padding: 5rem 2rem 3rem;
+		margin-inline: auto;
+		width: 40%;
+	}
+
+	img {
+		border-radius: var(--border-radius);
+	}
+
+	#lb-displayImg {
+		margin-inline: auto;
+	}
+
+	#lb-thumbnailImgs {
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		margin-top: 20px;
+	}
+
+	#lb-prev,
+	#lb-next {
+		cursor: pointer;
+		position: absolute;
+		background-color: var(--white);
+		width: 40px;
+		height: 40px;
+		display: grid;
+		place-items: center;
+		border-radius: 50px;
+		margin-top: -50px;
+	}
+
+	.next-prev:hover {
+		stroke: var(--brand-orange);
+	}
+
+	#lb-prev {
+		top: 50%;
+		left: 1rem;
+	}
+
+	#lb-next {
+		top: 50%;
+		right: 1rem;
+	}
+
+	#lb-close-btn {
+		position: absolute;
+		top: 30px;
+		right: 30px;
+	}
+
+	#lb-close-btn path:hover {
+		fill: var(--brand-orange);
+		cursor: pointer;
+	}
+
+	#lb-close-btn path {
+		fill: var(--white);
+	}
+
+	.lb-thumb {
+		background-color: var(--white);
+		border-radius: var(--border-radius);
+		width: 17%;
+	}
+
+	.lb-thumb:hover {
+		cursor: pointer;
+		filter: brightness(1) opacity(0.5);
+	}
+
+	.lb-selected {
+		outline: 3px solid var(--brand-orange);
+	}
+
+	.lb-active {
+		filter: brightness(1) opacity(0.25);
+	}
+}
