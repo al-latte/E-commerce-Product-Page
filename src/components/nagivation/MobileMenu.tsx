@@ -6,7 +6,7 @@ interface Props {
 
 const MobileMenu = ({ toggleMobileMenu }: Props) => {
 	return (
-		<menu className="menu">
+		<ul className="menu">
 			<li>
 				<svg
 					onClick={toggleMobileMenu}
@@ -27,7 +27,7 @@ const MobileMenu = ({ toggleMobileMenu }: Props) => {
 			<li>Women</li>
 			<li>About</li>
 			<li>Contact</li>
-		</menu>
+		</ul>
 	);
 };
 

@@ -15,6 +15,10 @@
 	height: 100%;
 	box-shadow: 20rem 0 20px 200px rgba(0, 0, 0, 0.395);
 }
+ul li {
+	list-style: none;
+	position: relative;
+}
 
 @media screen and (min-width: 1024px) {
 	.menu {
